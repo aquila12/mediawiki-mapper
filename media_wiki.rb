@@ -102,8 +102,6 @@ class MediaWiki < RestClient::Resource
     )
   end
 
-  # private
-
   # NB: memoist doesn't play properly with kwargs
   def _get(path, params)
     self[path].get(params: params)
