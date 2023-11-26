@@ -57,8 +57,7 @@ class MediaWiki < RestClient::Resource
       @wiki.get_select(
         'Special:WhatLinksHere',
         target: to_s,
-        hideredirs: 1,
-        css: '#mw-whatlinkshere-list li > a'
+        css: '#mw-whatlinkshere-list > li > a'
       )
     end
   end
